@@ -73,7 +73,7 @@ public class add extends AppCompatActivity {
         btnluu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                database.updatedb(new Contact(edtNameAdd.getText().toString(),
+                database.updatedb(new Contact(Integer.parseInt(idd),edtNameAdd.getText().toString(),
                         edtAddressAdd.getText().toString(),edtPhoneAdd.getText().toString()));
                 displayToast("OK bạn ơi!");
                 cancelActivity();
